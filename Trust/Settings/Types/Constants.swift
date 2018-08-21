@@ -21,7 +21,7 @@ public struct Constants {
     public static let supportEmail = "support@trustwalletapp.com"
     public static let donationAddress = "0x9f8284ce2cf0c8ce10685f537b1fff418104a317"
 
-    public static let dappsBrowserURL = "https://dapps.trustwalletapp.com/"
+    public static let dappsBrowserURL = "https://duo.network/kovan/"
     public static let dappsOpenSea = "https://opensea.io"
     public static let dappsRinkebyOpenSea = "https://rinkeby.opensea.io"
 

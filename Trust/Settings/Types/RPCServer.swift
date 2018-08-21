@@ -22,7 +22,7 @@ enum RPCServer {
 
     var chainID: Int {
         switch self {
-        case .main: return 1
+        case .main: return 42
         case .poa: return 99
         case .classic: return 61
         case .callisto: return 820
@@ -49,7 +49,7 @@ enum RPCServer {
 
     var name: String {
         switch self {
-        case .main: return "Ethereum"
+        case .main: return "Ethereum Kovan"
         case .poa: return "POA Network"
         case .classic: return "Ethereum Classic"
         case .callisto: return "Callisto"
@@ -78,7 +78,7 @@ enum RPCServer {
     var rpcURL: URL {
         let urlString: String = {
             switch self {
-            case .main: return "https://mainnet.infura.io/llyrtzQ3YhkdESt2Fzrk"
+            case .main: return "https://kovan.infura.io/llyrtzQ3YhkdESt2Fzrk"
             case .classic: return "https://etc-geth.0xinfra.com"
             case .callisto: return "https://clo-geth.0xinfra.com"
             case .poa: return "https://poa.infura.io"

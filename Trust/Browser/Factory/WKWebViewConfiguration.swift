@@ -12,8 +12,10 @@ extension WKWebViewConfiguration {
 
         guard
             let bundlePath = Bundle.main.path(forResource: "TrustWeb3Provider", ofType: "bundle"),
+            
             let bundle = Bundle(path: bundlePath) else { return config }
-
+            print("************bundle************")
+            print(bundle)
         if let filepath = bundle.path(forResource: "trust-min", ofType: "js") {
             do {
                 js += try String(contentsOfFile: filepath)
